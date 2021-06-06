@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>todays weather</title>
+		<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="weatherImg">
+			<img src="" alt="">
+		</div>
+		<div class="weatherContent">
+			<!-- Extremely bad weather -->
+			<h2>Yeah...</h2>
+			<h1>It's fucking <span class="weather"></span> Cats and Dogs Today</h1>
+		</div>
+	</div>
+
+	<script>
+
+		//use open weather API with fetch
+
+		function getWeather(){
+
+			const _apiUrl = "api.openweathermap.org/data/2.5/find"
+
+			fetch(`${_apiUrl}/`)
+			.then(response => {
+				console.log(response)
+			})
+
+		}
+		
+
+	</script>
+
+</body>
+</html>

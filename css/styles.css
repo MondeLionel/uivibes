@@ -1,0 +1,658 @@
+:root{
+    --mainBgColor:#0b1a1a;
+    --text-color:#d1cdcd;
+};
+
+*{}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--mainBgColor);
+    color: var(--text-color);
+    font-family: Poppins, sans-serif;
+    font-weight: 900;
+}
+
+
+
+
+
+p {
+    margin: 0;
+}
+
+.forminput {
+    width: 100%;
+}
+
+h2 {
+    color: #000;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+}
+
+.next {
+    background-color: black;
+    padding: 10px 1em;
+    color: #fff;
+    width: 30%;
+    opacity: 0;
+    border-top-left-radius: 10px;
+}
+
+.edit .next {
+    opacity: 1;
+}
+
+.link {
+    background-color: #ff5722;
+    border-radius: 50px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.loader{
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--mainBgColor);
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    display: none;
+}
+
+.loading .loader{
+    display: flex;
+}
+
+.header{
+   width: 100%;
+   display: flex;
+   height: 60px;
+   justify-content: space-between;
+   align-items: center;
+   position: absolute;
+   padding: 0 1em;
+   background-color: burlywood;
+}
+.logo{}
+.navigation{}
+.navigation .menu-item{}
+
+.wrapper{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+main.wrapper a {
+    margin: 1em;
+    color: #fff;
+}
+.mobile{
+    width: 320px;
+    max-height: 600px;
+    border-radius: 22px;
+    background-color: #ff5722;
+    margin-top: 52px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.mobile.flightDetails {
+    background-color: aliceblue;
+}
+
+.mobile .mainContent {
+    padding: 2em;
+}
+
+.flightDetails .mainContent {
+    padding: 0.5em;
+}
+
+.mainContent .city {min-height: 230px;}
+
+.mainContent .city .place {
+    color: #000;
+    font-weight: 900;
+    display: flex;
+    align-items: baseline;
+    height: 90px;
+    justify-content: space-between;
+}
+
+.mainContent .city .place h1 {
+    margin: 0;
+    font-weight: 900;
+    font-size: 5rem;
+    width: 90%;
+}
+
+.mainContent .city .place p {
+    margin: 0;
+    font-size: 10px;
+}
+
+.mobile .nav {
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+
+.flightDetails .nav {
+    box-shadow: 1px 1px 1px 1px #000;
+    color: #000;
+}
+
+.currentFlights{
+    display: block;
+    position: relative;
+    width: auto;
+    /* overflow: hidden; */
+}
+.ticket{
+    display: flex;
+    background-color: aliceblue;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 1px 3px 7px -5px #000;
+    margin-bottom: 1em;
+}
+.location{
+    margin: 0;
+}
+
+.location .cities {
+    margin: 0;
+    font-size: 2rem;
+    color: #000;
+}
+.metaInfo{
+    margin: 0;
+    color: #ff5722;
+}
+.datetime{
+    margin: 0;
+    font-size: 0.7em;
+}
+.date{
+    display: block;
+    width: 100%;
+    padding-left: 2em;
+}
+
+.date a {
+    display: block;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 2rem;
+}
+.time{}
+.pastFlight{}
+
+.flightInfo{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: orangered;
+    padding: 10px;
+    border-radius: 10px;
+    max-height: 50vh;
+}
+
+.flightInfo .barcode {
+    width: 100%;
+}
+
+.flightInfo .lineWrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    margin-bottom: 2em;
+    justify-content: space-between;
+    box-shadow: 0px 3px 0px -1px #000;
+}
+
+.flightInfo .line{
+    color: #000;
+    padding: 0px;
+    /* max-width: 50%; */
+    padding: 10px;
+}
+
+.flightInfo .line:active,.flightInfo .line:hover {
+    background-color: coral;
+}
+
+.flightInfo .line p{
+    margin: 0;
+    font-size: 10px;
+}
+.flightInfo .line h1{
+    padding: 0;
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+
+
+
+/*   TRIP */
+
+.trip{}
+
+.trip .mobile {
+    background-color: yellow;
+}
+.destination{
+    height: 100%;
+}
+.swiper-slide.select{
+    width: -webkit-fill-available;
+}
+
+.swiper-slide.select h2,
+.swiper-slide.select h1{
+    margin: 0;
+}
+.forminput{
+    color: #000;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    position: relative;
+}
+
+.finalScreen {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 0;
+}
+
+.finalScreen .dates {
+    height: 200px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #f2c208;
+    color: inherit;
+    flex-direction: column;
+    padding-top: 1em;
+    transform: translateY(150px);
+    position: absolute;
+    width: 100%;
+    transition: transform 0.3s ease-out;
+    bottom: 0;
+}
+
+.dates--open .finalScreen .dates .button {
+    opacity: 0.2;
+}
+
+.dates--open .finalScreen .dates .button img {
+    transform: rotate(180deg);
+    transition: transform 0.2s linear;
+}
+
+.button {
+    display: flex;
+    margin-bottom: 2em;
+    opacity: 1;
+}
+
+.date--chosen .button img {
+    display: none;
+}
+
+.dateSelector {
+    color: inherit;
+}
+
+.confirm .arrow {
+    position: absolute;
+    right: 4em;
+    top: 43%;
+}
+
+.letter {
+    border-radius: 100px;
+    position: absolute;
+    left: 9px;
+    top: 18px;
+    background-color: #000;
+    text-align: center;
+    padding: 4px;
+    width: 15px;
+    height: 15px;
+    text-transform: capitalize;
+    font-size: 0.7rem;
+    color: yellow;
+}
+
+.formField {
+    padding: 0 1em;
+}
+
+.formField::after {content: '';position: absolute;width: 4px;height: 30px;background-color: #121010;border-radius: 50px;right: 1rem;color: yellow;}
+
+.selectHead {
+    margin-bottom: 2em;
+    padding: 0 1em;
+    position: relative;
+}
+
+.selectHead::after {
+    position: absolute;
+    width: 85%;
+    height: 2px;
+    content: '';
+    display: block;
+    background-color: #161111;
+}
+
+.finalScreen .selectHead::after {
+    display: none;
+    content: "";
+}
+.forminput input[type="radio"]{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+.forminput label{
+    font-size: 2.3rem;
+    color: #000;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.forminput input[type="radio"]:focus + label,
+.forminput input[type="radio"]:active + label{}
+
+.formField input[type="radio"]:checked + label{
+    color: #fff;
+}
+
+
+.fromLocation{}
+.toDestination{}
+.confirm{
+    padding: 1em;
+    position: relative;
+    border-top: 1px solid #300;
+}
+
+.Payment {
+    /* display: none; */
+    background-color: #000;
+    opacity: 0;
+}
+
+.paymentSlide .allSet {
+    opacity: 0;
+    position: absolute;
+}
+
+.payments--confirmed .paymentSlide .allSet {
+    opacity: 1;
+}
+
+.paymentSlide .allSet h1 {
+    text-align: center;
+    color: #000;
+}
+
+.date--chosen .Payment {
+    display: flex;
+    /* color: yellow; */
+    text-align: center;
+    height: 15%;
+    opacity: 1;
+}
+
+.date--chosen .Payment a {
+    color: yellow;
+    font-weight: normal;
+    width: 100%;
+}
+
+.confirm::after {
+    position: absolute;
+    width: 6px;
+    height: 7px;
+    background-color: red;
+    display: block;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+
+.fullLocName{
+    color: #000;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-left: 1.5em;
+}
+
+.fullLocName::before {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: red;
+    z-index: 1;
+    display: block;
+}
+.shorthandName{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+
+.dates--open .dates{
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.dates--chosen .dates {
+    transform: translateY(100px);
+}
+
+.dateSelector{
+
+}
+
+.paymentSlide{display: flex;flex-direction: column;justify-content: center;align-items: center;}
+
+.paymentSlide .confirmPayment {
+    padding: 1em;
+    opacity: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.payments--confirmed .confirmPayment {opacity: 0;}
+
+.confirmPayment h1 {
+    color: #000;
+}
+
+span.price {
+    text-decoration: underline;
+}
+
+.confirmPayment a {
+    color: yellow;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.mastercard{width: 250px;height: 139px;background: linear-gradient(45deg, #151414, #5b4747f5);display: block;border-radius: 10px;margin: 0 auto;font-size: 0.8em;font-family: sans-serif;font-weight: 100;padding: 1em;box-shadow: 0px 8px 4px -6px #000;}
+
+.cardExpDate {
+    font-size: 15px;
+}
+
+.mastercard .bankName {
+    font-size: 1rem;
+    text-align: end;
+}
+
+.mastercard .simModule {
+    width: 41px;
+    height: 28px;
+    background-color: silver;
+    border-radius: 5px;
+}
+
+.mastercard .cardNumber {
+    font-size: 1.4rem;
+    font-family: monospace;
+    margin-bottom: 1em;
+}
+
+.mastercard .cardInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mastercard .cardInfo .cardUserName {}
+
+.mastercard .cardInfo .cardExp {
+    font-size: 0.5rem;
+    text-align: end;
+}
+
+.mastercard .cardInfo .cardExp .small {
+    font-size: 0.5rem;
+}
+
+.paymentBtn{
+    
+}
+
+
+
+
+
+
+
+/*VIDEO PAGES*/
+
+.videoPage{
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.videoPage .vidFooter {
+    position: absolute;
+}
+
+.videoPage .vidHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    position: absolute;
+    width: 96%;
+}
+
+.videoPage .vidHeader a {
+    font-size: 2em;
+    color: #fff;
+}
+
+.videoPage.video--show .videos {
+    opacity: 1;
+}
+
+.videoPage .videos {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.videoPage .main {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.main .linkWrapper {
+    display: flex;
+    flex-flow: column;
+    padding: 2em;
+}
+
+.linkWrapper.links--active .vid {
+    opacity: 0;
+}
+
+.linkWrapper.links--active .vid.active {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.linkWrapper.links--active {}
+
+.linkWrapper .links--active {}
+
+.videoPage .main a {
+    /* margin-left: 1em; */
+    font-size: 4.3rem;
+    color: #fff;
+}
+
+.videoPage .main a:hover {
+    color: azure;
+}
+
+.videos {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.video {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: block;
+    background-color: #00000042;
+}
+
+.video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}

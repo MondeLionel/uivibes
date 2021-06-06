@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TRIPIN'</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="vendor/css/swiper.min.css">
+</head>
+<body class="trip">
+	<div class="wrapper">
+		<div class="mobile">
+			<header></header>
+			<div class="swiper-container destination swiper-no-swiping">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide select">
+						<!-- <form action=""></form> -->
+						<div class="forminput">
+							<div class="selectHead">
+								<h4>Select "FROM" Destination</h4>
+							</div>
+
+							<div class="formField">
+								<input type="radio" id="san-jose" name="destination">
+								<label for="san-jose">San jose</label>
+								
+							</div>
+							<div class="formField">
+								<input type="radio" id="joburg" name="destination">
+								<label for="joburg">joburg</label>
+								
+							</div>
+							<div class="formField">
+								<input type="radio" id="libombe" name="destination">
+								<label for="libombe">Libombe</label>
+								
+							</div>
+							<div class="formField">
+								<input type="radio" id="new-york" name="destination">
+								<label for="new-york">new york</label>
+								
+							</div>
+						</div>	
+					</div>
+
+
+					<!-- form Part your location -->
+					<div class="swiper-slide select">
+
+						<div class="forminput">
+							<div class="selectHead">
+								<h4>Select "TO" Destination</h4>
+							</div>
+
+							<div class="formField">
+								<input type="radio" id="musgrave" name="location">
+								<label for="musgrave">Musgrave</label>
+								
+							</div>
+							<div class="formField">
+								<input type="radio" id="albersville" name="location">
+								<label for="albersville">Albersville</label>
+								
+							</div>
+							<div class="formField">
+								<input type="radio" id="overport" name="location">
+								<label for="overport">Overport</label>
+								
+							</div>
+							<div class="formField">
+								<input type="radio" id="phoenix" name="location">
+								<label for="phoenix">Phoenix</label>
+								
+							</div>
+						</div>	
+
+						<!-- only visible after edits -->
+						<a href="javascript:void(0)" class="next">SKIP</a>
+						
+					</div>
+
+
+					<!-- final screen -->
+
+					<div class="swiper-slide select">
+
+						<div class="finalScreen forminput">
+							<div class="selectHead">
+								<h3>Select <br>Trip</h3>
+							</div>
+								<div class="fromLocation confirm">
+									<span class="letter"></span>
+									<a href="javascript:void(0)" class="fullLocName"></a>
+									<h1 class="shorthandName"></h1>
+									
+										<a href="#" class="arrow from">
+										 <svg width="40" height="40" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g><path d="M 17,2C 8.716,2, 2,8.716, 2,17S 8.716,32, 17,32S 32,25.284, 32,17S 25.284,2, 17,2z M 26,17 c0,0.002,0,0.002,0,0.004c0,0.13-0.026,0.258-0.076,0.378c-0.050,0.122-0.124,0.232-0.216,0.324l-6,6 c-0.39,0.39-1.024,0.39-1.414,0c-0.39-0.39-0.39-1.024,0-1.414L 22.586,18L 7,18 C 6.448,18, 6,17.552, 6,17C 6,16.448, 6.448,16, 7,16 l 15.586,0 L 18.292,11.708c-0.39-0.39-0.39-1.024,0-1.414c 0.39-0.39, 1.024-0.39, 1.414,0l 6,6c 0.092,0.092, 0.166,0.202, 0.216,0.324 C 25.974,16.74, 26,16.87, 26,17L 26,17z"></path></g></svg>
+										</a>
+									
+								</div>
+								
+								<div class="toDestination confirm">
+									<span class="letter"></span>
+									<a href="javascript:void(0)" class="fullLocName"></a>
+									<h1 class="shorthandName"></h1>
+									<a href="#" class="arrow to">
+										 <svg width="40" height="40" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g><path d="M 17,2C 8.716,2, 2,8.716, 2,17S 8.716,32, 17,32S 32,25.284, 32,17S 25.284,2, 17,2z M 26,17 c0,0.002,0,0.002,0,0.004c0,0.13-0.026,0.258-0.076,0.378c-0.050,0.122-0.124,0.232-0.216,0.324l-6,6 c-0.39,0.39-1.024,0.39-1.414,0c-0.39-0.39-0.39-1.024,0-1.414L 22.586,18L 7,18 C 6.448,18, 6,17.552, 6,17C 6,16.448, 6.448,16, 7,16 l 15.586,0 L 18.292,11.708c-0.39-0.39-0.39-1.024,0-1.414c 0.39-0.39, 1.024-0.39, 1.414,0l 6,6c 0.092,0.092, 0.166,0.202, 0.216,0.324 C 25.974,16.74, 26,16.87, 26,17L 26,17z"></path></g></svg>
+									</a>
+								</div>
+
+								<div class="Payment confirm">
+									<a href="javascript:void(0)" class="checkoutBtn">PAY NOW</a>
+								</div>
+
+								<div class="dates">
+									<div class="button">
+										<img src="img/icons/arrow_down.svg" alt="">
+										<a href="#" class="dateSelector">
+											<span>Select Dates</span>
+										</a>
+									</div>
+									
+									<div class="date">
+										<div class="formField">
+											<input type="radio" id="today" name="date">
+											<label for="today">Today</label>
+										</div>
+										<div class="formField">
+											<input type="radio" id="tomorrow" name="date">
+											<label for="tomorrow">Tomorrow</label>
+										</div>
+										<div class="formField">
+											<input type="radio" id="another-day" name="date">
+											<label for="another-day">Another Day</label>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+
+
+					<!-- payment Slide : Should we append this shit? -->
+
+					<div class="swiper-slide paymentSlide">
+						<div class="confirmPayment">
+						<div class="mastercard">
+							
+							<p class="bankName">CHASE</p>
+							<!-- <img src="" alt="ID Module Connector" class="simModule"> -->
+							<p class="simModule"></p>
+							<p class="cardNumber">1198 3222 9801 2190</p>
+							<div class="cardInfo">
+								<span class="cardUserName">M. Nyawose</span>
+								<div class="cardExp">
+									<p class="small">Month/year</p>
+									<p>
+										<span>VALID THRU</span>
+										<span class="cardExpDate">12/22</span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<h1>Total cost is <span class="price">R180</span> incl VAT.</h1>
+						<a href="#" class="confirmChekckout">Confirm and Checkout</a>
+					</div>
+
+					<div class="allSet">
+						<h1>
+							<span>All Set</span>
+						</h1>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="vendor/js/swiper.min.js"></script>
+	<script src="vendor/js/anime.min.js"></script>
+	<script src="js/main.js"></script>
+
+
+</body>
+</html>
