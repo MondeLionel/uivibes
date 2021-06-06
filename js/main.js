@@ -30,6 +30,15 @@ const _departureDate = document.querySelectorAll('input[name="date"]')
 const _checkoutBtn = document.querySelector(".checkoutBtn");
 const _confirmCheckout = document.querySelector(".confirmChekckout");
 
+const _ticketBtn = document.querySelector(".ticketBtn");
+
+_ticketBtn.addEventListener("click", function(e){
+	e.preventDefault();
+
+
+	tripSwiper.slideNext(500, false);
+})
+
 
 dateClasstoggle.addEventListener("click", function(){
 	_body.classList.toggle("dates--open")
@@ -98,7 +107,7 @@ _departureDate.forEach(function(dateItem,i){
 	
 	dateItem.addEventListener("change", function(){
 		if(this.checked){
-			dateClasstoggle.innerHTML = `Going ${dateItem.id}`;
+			dateClasstoggle.innerHTML = `Going from ${_toLocFull.innerText.toLowerCase()} to ${_fromLocFull.innerText.toLowerCase()} ${dateItem.id}  &#128516;`;
 			_body.classList.add('date--chosen')
 			_body.classList.remove('dates--open')
 
